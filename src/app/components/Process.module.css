@@ -1,0 +1,90 @@
+.section {
+  width: 100%;
+  padding: 100px 10%;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.timelineContainer {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 40px 0;
+}
+
+.lineBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 39px; /* center of iconBox (80/2 - 1 border) */
+  width: 2px;
+  background: var(--glass-border);
+  z-index: 1;
+}
+
+.lineFill {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  width: 2px;
+  background: var(--primary);
+  z-index: 2;
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+.iconBox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--background);
+}
+
+.icon {
+  color: var(--primary);
+}
+
+.stepTitle {
+  font-size: 2rem;
+  color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .lineBackground, .lineFill {
+    left: 29px;
+  }
+  .iconBox {
+    width: 60px;
+    height: 60px;
+  }
+  .step {
+    gap: 20px;
+  }
+  .stepTitle {
+    font-size: 1.5rem;
+  }
+}

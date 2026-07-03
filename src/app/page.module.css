@@ -1,0 +1,96 @@
+.main {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.heroSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10%;
+  z-index: 10;
+  pointer-events: none; /* Let clicks pass through to 3D canvas if needed */
+}
+
+.heroContent {
+  max-width: 800px;
+  pointer-events: auto;
+}
+
+.headline {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #a1a1aa;
+  margin-bottom: 48px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 24px;
+}
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 40px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btnPrimary {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px var(--primary-glow), inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+.btnSecondary {
+  background: rgba(255,255,255,0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.btnSecondary:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .headline {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 0 5%;
+  }
+  .headline {
+    font-size: 2.5rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .ctaGroup {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,99 @@
+.verticalsContainer {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  padding: 100px 0;
+}
+
+.verticalSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 5%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.contentLeft {
+  flex: 1;
+  pointer-events: auto;
+}
+
+.contentRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  perspective: 1000px;
+}
+
+.sectionTitle {
+  font-size: 4.5rem;
+  margin-bottom: 24px;
+}
+
+.sectionDesc {
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.iconGrid {
+  display: flex;
+  gap: 24px;
+}
+
+.iconBox {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iconBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px var(--primary-glow);
+}
+
+.card {
+  padding: 60px;
+  width: 100%;
+  max-width: 500px;
+  transform-style: preserve-3d;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: var(--foreground);
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #d4d4d8;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .verticalSection, .reverse {
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    padding: 100px 5%;
+  }
+  .sectionTitle {
+    font-size: 3rem;
+  }
+}
