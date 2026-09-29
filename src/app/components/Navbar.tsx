@@ -19,9 +19,9 @@ export default function Navbar() {
       </Link>
       
       <ul className={styles.navLinks}>
-        <li><Link href="#logistics" className={styles.navLink}>Logistics</Link></li>
         <li><Link href="#it" className={styles.navLink}>IT</Link></li>
         <li><Link href="#content" className={styles.navLink}>Studio</Link></li>
+        <li><Link href="#logistics" className={styles.navLink}>Logistics</Link></li>
         <li><Link href="#global" className={styles.navLink}>Global</Link></li>
       </ul>
       
