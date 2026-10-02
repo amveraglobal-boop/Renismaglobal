@@ -24,7 +24,7 @@ export default function Home() {
             Powering Creativity.
           </h1>
           <p className={styles.subheading}>
-            Global Logistics &bull; Information Technology &bull; Content Studio &bull; VFX &bull; Animation
+            LogiTech &bull; Information Technology &bull; Content Studio &bull; VFX &bull; Animation
           </p>
           <div className={styles.ctaGroup}>
             <button className={`${styles.btn} ${styles.btnPrimary}`}>Explore Services</button>

@@ -78,19 +78,13 @@ export default function Verticals() {
       {/* 3. Logistics */}
       <section className={styles.verticalSection} id="logistics">
         <div className={styles.contentLeft}>
-          <h2 className={styles.sectionTitle}>Global <span className="text-gradient-primary">Logistics</span></h2>
+          <h2 className={styles.sectionTitle}>Logi<span className="text-gradient-primary">Tech</span></h2>
           <p className={styles.sectionDesc}>
-            International Freight • Air Cargo • Sea Freight • Supply Chain • Warehousing
+            Enterprise Logistics Automation Products and AI-Powered Logistics technology built for modern businesses.
           </p>
           <div className={styles.iconGrid}>
             <div className={styles.iconBox}><Plane size={32} /></div>
             <div className={styles.iconBox}><Box size={32} /></div>
-          </div>
-        </div>
-        <div className={styles.contentRight}>
-          <div className={`glass-panel ${styles.card}`}>
-            <h3>Intelligent Routing</h3>
-            <p>Our global network is powered by real-time analytics, ensuring the fastest delivery from warehouse to destination.</p>
           </div>
         </div>
       </section>
